@@ -1,3 +1,5 @@
+const Projects = require('../data/helpers/projectModel')
+
 function validateProjectId(req, res, next) {
   const id = req.params.id
   Projects.get(id)
